@@ -1,5 +1,5 @@
 import cloudinary from 'cloudinary';
-import uuid from 'uuid/v4';
+import uuid from 'uuid/dist/v4';
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
