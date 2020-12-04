@@ -1,6 +1,6 @@
 [build]
-  base    = "explorer"
-  publish = "frontend/"
+  base    = "frontend"
+  publish = "/frontend"
   command = "npm run build"
 
 [[redirects]]
