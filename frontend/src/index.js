@@ -11,7 +11,7 @@ import theme from 'theme';
 import App from 'components/App/App';
 
 // GraphQL HTTP URL
-const API_URL = process.env.REACT_APP_API_URL;
+const API_URL = process.env.REACT_APP_API_URL ;
 
 // GraphQL WebSocket (subscriptions) URL.
 // If its url is not set in .env then it has same url, host and pathname
