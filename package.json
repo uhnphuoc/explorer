@@ -5,7 +5,7 @@
   "scripts": {
     "start:api": "npm start --prefix api",
     "start:frontend": "npm start --prefix frontend",
-    "start": "concurrently \"npm run start:api\" \"npm run start:frontend\"",
+    "start": "git subtree push --prefix api heroku master",
     "deploy:api": "git subtree push --prefix api heroku master"
   },
   "workspaces": [
