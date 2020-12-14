@@ -70,8 +70,8 @@ const Home = () => {
     if (!posts.length) {
       return (
         <Empty>
-          <StyledA to={generatePath(Routes.EXPLORE)}>Explore new posts</StyledA> or{' '}
-          <StyledA to={generatePath(Routes.PEOPLE)}>Find new people</StyledA>
+          <StyledA to={generatePath(Routes.EXPLORE)}>Bài viết mới</StyledA> or{' '}
+          <StyledA to={generatePath(Routes.PEOPLE)}>Tìm kiếm người dùng</StyledA>
         </Empty>
       );
     }

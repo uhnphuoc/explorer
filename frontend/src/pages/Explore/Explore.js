@@ -115,7 +115,7 @@ const Explore = () => {
 
   return (
     <Root maxWidth="md">
-      <Head title="Explore New Posts and Users" />
+      <Head title="Khám phá bài viết mới và người dùng " />
 
       {renderContent()}
     </Root>
