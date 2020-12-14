@@ -69,17 +69,17 @@ const PostCardOption = ({ postId, author, closeOption, deletePost }) => {
       )}
 
       <StyledButton fullWidth text onClick={copyToClipboard}>
-        Copy link
+        Xóa liên kết
       </StyledButton>
 
       {auth.user.id === author.id && (
         <StyledButton fullWidth text onClick={deletePost}>
-          Delete post
+          Xóa bài
         </StyledButton>
       )}
 
       <StyledButton fullWidth onClick={closeOption} text>
-        Cancel
+        Hủy
       </StyledButton>
     </Root>
   );
