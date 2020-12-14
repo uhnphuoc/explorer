@@ -178,7 +178,7 @@ const MessagesChatConversation = ({ messages, authUser, chatUser, data, match })
       {match.params.userId !== Routes.NEW_ID_VALUE && chatUser && (
         <Form onSubmit={sendMessage}>
           <StyledTextarea
-            placeholder="Type a message"
+            placeholder="Nhập vào tin nhắn"
             value={messageText}
             onChange={(e) => setMessageText(e.target.value)}
             onKeyDown={onEnterPress}

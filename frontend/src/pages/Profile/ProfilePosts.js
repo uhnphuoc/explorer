@@ -49,7 +49,7 @@ const ProfilePosts = ({ username }) => {
   if (!posts.length > 0) {
     return (
       <Spacing bottom="lg">
-        <Empty text="No posts yet." />
+        <Empty text="Không có bài viết nào." />
       </Spacing>
     );
   }

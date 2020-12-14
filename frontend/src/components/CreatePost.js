@@ -165,7 +165,7 @@ const CreatePost = () => {
               value={title}
               onFocus={handleOnFocus}
               onChange={handleTitleChange}
-              placeholder="Add a post"
+              placeholder="Bạn đang nghĩ gì đó 😉"
             />
 
             {!isFocused && <PostImageUpload handleChange={handlePostImageUpload} />}

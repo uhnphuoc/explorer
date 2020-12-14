@@ -31,7 +31,7 @@ const Label = styled.label`
  */
 const PostImageUpload = ({ handleChange, label }) => (
   <>
-    <Input name="image" onChange={handleChange} type="file" id="post-image" accept="image/x-png,image/jpeg" />
+    <Input name="Hình ảnh" onChange={handleChange} type="file" id="post-image" accept="image/x-png,image/jpeg" />
 
     <Label htmlFor="post-image">
       <UploadImageIcon />

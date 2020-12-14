@@ -85,7 +85,7 @@ const ResetPassword = ({ history, location, refetch }) => {
 
   return (
     <Root>
-      <Head title="Đặt lại mật khẩu" />
+      <Head title="Đặt lại mật khẩu " />
 
       <Container>
         <>

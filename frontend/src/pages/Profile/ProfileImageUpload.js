@@ -79,7 +79,7 @@ const ProfileImageUpload = ({ userId, image, imagePublicId, username }) => {
 
     if (file.size >= MAX_USER_PROFILE_IMAGE_SIZE) {
       setLoading(false);
-      message.error(`File size should be less then ${MAX_USER_PROFILE_IMAGE_SIZE / 1000000}MB`);
+      message.error(`Kích thước File lớn ${MAX_USER_PROFILE_IMAGE_SIZE / 1000000}MB`);
       return;
     }
 

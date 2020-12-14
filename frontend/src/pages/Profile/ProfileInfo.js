@@ -130,13 +130,13 @@ const ProfileInfo = ({ user }) => {
 
       <Info>
         <List>
-          <b>{user.posts.length} </b> posts
+          <b>{user.posts.length} </b> Bài đăng
         </List>
         <List>
-          <b>{user.followers.length} </b> followers
+          <b>{user.followers.length} </b> Người theo dõi
         </List>
         <List>
-          <b>{user.following.length} </b> following
+          <b>{user.following.length} </b> Theo dõi
         </List>
       </Info>
     </Root>

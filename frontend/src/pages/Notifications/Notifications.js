@@ -48,7 +48,7 @@ const Notifications = () => {
 
     const { notifications, count } = data.getUserNotifications;
     if (!notifications.length) {
-      return <Empty text="No notifications yet." />;
+      return <Empty text="Không có thông báo nào" />;
     }
 
     return (
@@ -81,7 +81,7 @@ const Notifications = () => {
   return (
     <Content>
       <Root maxWidth="md">
-        <Head title={`${auth.user.username}'s Notifications`} />
+        <Head title={`${auth.user.username}' Thông báo`} />
 
         {renderContent()}
       </Root>

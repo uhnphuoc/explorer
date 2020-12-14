@@ -59,7 +59,7 @@ const People = () => {
     }
 
     const { users, count } = data.getUsers;
-    if (!users.length > 0) return <Empty text="No people yet." />;
+    if (!users.length > 0) return <Empty text="Không có người nào" />;
 
     return (
       <InfiniteScroll
@@ -90,7 +90,7 @@ const People = () => {
 
   return (
     <Root maxWidth="md">
-      <Head title="Find new People" />
+      <Head title="Tìm kiếm người mới" />
 
       {renderContent()}
     </Root>

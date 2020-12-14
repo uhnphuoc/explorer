@@ -174,7 +174,7 @@ const MessagesUsers = ({ location, authUser }) => {
   return (
     <Root>
       <HeadingContainer>
-        <Heading>Chats</Heading>
+        <Heading>Trò chuyện</Heading>
 
         <NewMessage
           exact
@@ -186,7 +186,7 @@ const MessagesUsers = ({ location, authUser }) => {
       </HeadingContainer>
 
       <SearchContainer>
-        <Search location={location} backgroundColor="white" forMessage placeholder="Search message" />
+        <Search location={location} backgroundColor="white" forMessage placeholder="Tìm kiếm tin nhắn" />
       </SearchContainer>
 
       {loading && <LoadingDots top="xl" />}

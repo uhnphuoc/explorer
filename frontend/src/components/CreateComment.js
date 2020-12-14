@@ -75,7 +75,7 @@ const CreateComment = ({ post, focus }) => {
       <Textarea
         onChange={(e) => setComment(e.target.value)}
         value={comment}
-        placeholder="Add a comment..."
+        placeholder="Thêm bình luận..."
         onKeyDown={onEnterPress}
         ref={TextareaEl}
       />
@@ -88,7 +88,7 @@ const CreateComment = ({ post, focus }) => {
         ref={buttonEl}
         disabled={!comment || loading}
       >
-        Post
+        Bình luận
       </Button>
     </Form>
   );
