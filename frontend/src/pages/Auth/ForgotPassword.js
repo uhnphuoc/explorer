@@ -91,7 +91,7 @@ const ForgotPassword = () => {
 
       <Container>
         <Spacing bottom="sm">
-          <H1>Reset Password</H1>
+          <H1>Đặt lại mật khẩu</H1>
           <Text>
             Enter the email address associated with your account, and we’ll email you a link to reset your password.
           </Text>
@@ -108,10 +108,10 @@ const ForgotPassword = () => {
 
           <Spacing top="xs" />
 
-          <Button disabled={loading}>Send reset link</Button>
+          <Button disabled={loading}>Gửi link reset</Button>
 
           <Spacing top="sm">
-            <A to={Routes.HOME}>&larr; Back to Sign Up</A>
+            <A to={Routes.HOME}>&larr; Quay lại đăng ký</A>
           </Spacing>
         </form>
       </Container>
