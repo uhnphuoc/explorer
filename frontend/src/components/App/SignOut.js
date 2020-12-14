@@ -26,7 +26,7 @@ const SignOut = ({ history }) => {
 
   return (
     <Button text onClick={handleSignOut}>
-      Sign out
+      Đăng xuất
     </Button>
   );
 };

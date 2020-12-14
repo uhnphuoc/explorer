@@ -19,6 +19,7 @@ import { useStore } from 'store';
 
 /**
  * Root component of the app
+ * Root component 
  */
 const App = () => {
   const [{ message }] = useStore();

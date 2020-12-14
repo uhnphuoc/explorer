@@ -72,27 +72,27 @@ const SignUp = ({ history, refetch }) => {
 
   const validate = () => {
     if (!fullName || !email || !username || !password) {
-      return 'All fields are required';
+      return 'Bạn đang điền thiếu gì đó 😶';
     }
 
     if (fullName.length > 50) {
-      return 'Full name no more than 50 characters';
+      return 'Tên đầy đủ không quá 50 ký tự';
     }
 
     const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!emailRegex.test(String(email).toLowerCase())) {
-      return 'Enter a valid email address.';
+      return 'Bạn nhập email sai rồi 📧';
     }
 
     const usernameRegex = /^(?!.*\.\.)(?!.*\.$)[^\W][\w.]{0,29}$/;
     if (!usernameRegex.test(username)) {
-      return 'Usernames can only use letters, numbers, underscores and periods';
+      return 'Tên đăng nhập là ký tự, số, gạch dưới và chấm';
     } else if (username.length > 20) {
-      return 'Username no more than 50 characters';
+      return 'Tên đăng nhập không quá 20 ký tự';
     }
 
     if (password.length < 6) {
-      return 'Password min 6 characters';
+      return 'Mật khẩu tối thiểu 6 ký tự';
     }
 
     return false;
@@ -126,17 +126,17 @@ const SignUp = ({ history, refetch }) => {
 
       <Welcome>
         <div>
-          <Heading color="white">Connect with friends and the world around you.</Heading>
+          <Heading color="white">Kết nối với mọi người xung quanh bạn</Heading>
         </div>
 
-        <p>See photos and updates from your friends.</p>
-        <p>Follow your interests.</p>
-        <p>Hear what people are talking about.</p>
+        <p>Cập nhật thông tin về những người bạn</p>
+        <p>Theo dõi những điều yêu thích </p>
+        <p>Lắng nghe những điều mọi người quan tâm</p>
       </Welcome>
 
       <Form>
         <Spacing bottom="md">
-          <H1>Create Account</H1>
+          <H1>Tạo tài khoản</H1>
         </Spacing>
 
         <form onSubmit={(e) => handleSubmit(e, signup)}>
@@ -145,7 +145,7 @@ const SignUp = ({ history, refetch }) => {
             name="fullName"
             values={fullName}
             onChange={handleChange}
-            placeholder="Full name"
+            placeholder="Tên đầy đủ"
             borderColor="white"
           />
           <Spacing top="xs" bottom="xs">
@@ -163,7 +163,7 @@ const SignUp = ({ history, refetch }) => {
             name="username"
             values={username}
             onChange={handleChange}
-            placeholder="Username"
+            placeholder="Tên đăng nhập"
             borderColor="white"
           />
           <Spacing top="xs" bottom="xs">
@@ -172,7 +172,7 @@ const SignUp = ({ history, refetch }) => {
               name="password"
               values={password}
               onChange={handleChange}
-              placeholder="Password"
+              placeholder="Mật khẩu"
               borderColor="white"
             />
           </Spacing>
@@ -183,7 +183,7 @@ const SignUp = ({ history, refetch }) => {
           )}
           <Spacing top="sm" />
           <Button size="large" disabled={loading}>
-            Sign up
+            Đăng ký
           </Button>
         </form>
       </Form>

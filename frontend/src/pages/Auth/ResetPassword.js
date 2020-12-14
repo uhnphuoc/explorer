@@ -59,13 +59,13 @@ const ResetPassword = ({ history, location, refetch }) => {
     e.preventDefault();
 
     if (!password || !confirmPassword) {
-      setError('Enter password and Confirm password.');
+      setError('Nhập mật khẩu và xác thực mật khẩu');
       return;
     } else if (password.length < 6) {
-      setError('Password min 6 characters');
+      setError('Mật khẩu phải nhiều 6 ký tự');
       return;
     } else if (password !== confirmPassword) {
-      setError("Passwords don't match.");
+      setError("Mật khẩu không khớp");
       return;
     }
 
@@ -85,7 +85,7 @@ const ResetPassword = ({ history, location, refetch }) => {
 
   return (
     <Root>
-      <Head title="Reset Password" />
+      <Head title="Đặt lại mật khẩu" />
 
       <Container>
         <>
